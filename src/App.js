@@ -11,16 +11,28 @@ function App() {
   return (
     <div>
       <nav>
-        <Link to="/" element={<Home />}>
-          {" "}
-          Home
-        </Link>
-        <Link to="/about"> About</Link>
-        <Link to="/contact"> Contact</Link>
-        <Link to="/signup"> Sign Up</Link>
+        <div></div>
+        <div className="links">
+          <Link className="list" to="/" element={<Home />}>
+            {" "}
+            Home
+          </Link>
+          <Link className="list" to="/about">
+            {" "}
+            About
+          </Link>
+          <Link className="list" to="/contact">
+            {" "}
+            Contact
+          </Link>
+          <Link className="list" to="/signup">
+            {" "}
+            Sign Up
+          </Link>
+        </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<SignUp />} />
