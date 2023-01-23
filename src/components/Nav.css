@@ -1,0 +1,27 @@
+.list {
+  display: flex;
+  text-decoration: none;
+}
+nav {
+  left: 0;
+  top: 0;
+  height: 50px;
+  padding: 20px;
+  background-color: #ee7e63;
+  color: #f9f9f9;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+li::marker {
+  color: #ee7e63;
+}
+li {
+  margin-left: 20px;
+  height: 30px;
+}
+li:hover {
+  background-color: #f9f9f9;
+  color: #ee7e63;
+}
