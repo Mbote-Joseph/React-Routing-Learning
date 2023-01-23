@@ -5,7 +5,7 @@ const { Fragment } = require("react");
 let Home = () => {
   return (
     <Fragment>
-      <Nav />
+      <h2>Home Page</h2>
     </Fragment>
   );
 };

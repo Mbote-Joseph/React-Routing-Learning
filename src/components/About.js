@@ -1,13 +1,11 @@
 import { Fragment } from "react";
 
-import "./Nav.css";
-
-let Nav = () => {
+let About = () => {
   return (
     <Fragment>
-      <h2>Nav Bar</h2>
+      <h2>About Us</h2>
     </Fragment>
   );
 };
 
-export default Nav;
+export default About;

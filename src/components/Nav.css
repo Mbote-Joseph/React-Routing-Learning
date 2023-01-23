@@ -1,4 +1,4 @@
-.list {
+Link {
   display: flex;
   text-decoration: none;
 }
@@ -14,14 +14,11 @@ nav {
   justify-content: space-between;
 }
 
-li::marker {
-  color: #ee7e63;
-}
-li {
+Link {
   margin-left: 20px;
   height: 30px;
 }
-li:hover {
+Link:hover {
   background-color: #f9f9f9;
   color: #ee7e63;
 }
