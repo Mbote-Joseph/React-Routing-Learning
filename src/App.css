@@ -4,3 +4,27 @@
   color: #f9f9f9;
   font-size: 20px;
 }
+Link {
+  display: flex;
+  text-decoration: none;
+}
+nav {
+  left: 0;
+  top: 0;
+  height: 70px;
+  padding: 20px;
+  background-color: #ee7e63;
+  color: #f9f9f9;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+Link {
+  margin-left: 20px;
+  height: 30px;
+}
+Link:hover {
+  background-color: #f9f9f9;
+  color: #ee7e63;
+}
