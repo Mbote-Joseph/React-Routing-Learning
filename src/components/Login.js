@@ -1,33 +1,18 @@
 import { Fragment } from "react";
-import "./SignUp.css";
 
-let SignUp = () => {
+let Login = () => {
   return (
     <Fragment>
       <div className="signup">
-        <h2>Sign Up Page</h2>
+        <h2>Login Page</h2>
         <div className="card">
-          <input
-            type="text"
-            className="username"
-            placeholder="Enter your username"
-          />
-          <br />
-
           <input type="text" className="email" placeholder="Email Address" />
           <br />
-
+          <br />
           <input
             type="password"
             className="password"
             placeholder="Enter password"
-          />
-
-          <br />
-          <input
-            type="password"
-            className="password"
-            placeholder="Re-Enter password"
           />
           <br />
           <br />
@@ -38,4 +23,4 @@ let SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Login;
