@@ -13,6 +13,18 @@ let SignUp = () => {
             placeholder="Enter your username"
           />
           <br />
+          <input
+            type="text"
+            className="FirstName"
+            placeholder="Enter your First Name"
+          />
+          <br />
+          <input
+            type="text"
+            className="LastName"
+            placeholder="Enter your Last Name"
+          />
+          <br />
 
           <input type="text" className="email" placeholder="Email Address" />
           <br />
