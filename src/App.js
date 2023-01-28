@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -43,6 +44,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }
