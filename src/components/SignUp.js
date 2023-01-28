@@ -43,7 +43,7 @@ let SignUp = () => {
           />
           <br />
           <br />
-          <input type="submit" className="btn btn-primary" />
+          <input type="submit" className="button" />
         </div>
       </div>
     </Fragment>

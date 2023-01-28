@@ -29,3 +29,7 @@ input[type="submit"] {
   height: 30px;
   cursor: pointer;
 }
+
+.button:hover {
+  height: 40px;
+}
