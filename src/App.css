@@ -33,6 +33,7 @@ body {
   background-image: url(./components/images/image1.svg);
   background-repeat: no-repeat;
   /* background-position: center; */
-  background-position: 50% -30%;
+  background-position: 50% bottom;
   z-index: -2px;
+  min-height: 80vh;
 }
