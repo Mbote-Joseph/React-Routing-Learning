@@ -28,3 +28,11 @@ Link:hover {
   background-color: #f9f9f9;
   color: #ee7e63;
 }
+
+body {
+  background-image: url(./components/images/image1.svg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-position: 50% -30%;
+  z-index: -2px;
+}
