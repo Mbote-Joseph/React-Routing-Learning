@@ -10,6 +10,7 @@ const Contact = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log(firstName, lastName, email, message);
+    alert(`Thank you ${firstName} ${lastName} for your message!`);
   };
 
   return (
