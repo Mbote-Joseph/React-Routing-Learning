@@ -23,7 +23,7 @@ const Home = () => {
         <label>First Name</label>
         <input
           type="text"
-          value={inputData.firstName || ""}
+          value={inputData.firstName}
           placeholder="Enter your First Name"
           onChange={handleSubmit}
           required
@@ -32,7 +32,7 @@ const Home = () => {
         <label>Last Name</label>
         <input
           type="text"
-          value={inputData.lastName || ""}
+          value={inputData.lastName}
           placeholder="Enter your Last Name"
           onChange={handleSubmit}
           required
@@ -41,7 +41,7 @@ const Home = () => {
         <label>Email</label>
         <input
           type="text"
-          value={inputData.email || ""}
+          value={inputData.email}
           placeholder="Enter your Email"
           onChange={handleSubmit}
           required
@@ -51,6 +51,8 @@ const Home = () => {
 
         <br />
       </form>
+
+      <h4>{inputData.firstName}</h4>
     </Fragment>
   );
 };
