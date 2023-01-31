@@ -1,59 +1,57 @@
-import { Fragment } from "react";
 import { useState } from "react";
 
 const Home = () => {
-  const [inputData, setInputData] = useState({});
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    message: "",
+  });
 
-  const handleSubmit = (e) => {
-    const firstName = e.target.value;
-    const lastName = e.target.value;
-    const email = e.target.value;
-    setInputData((values) => ({ ...values, firstName, lastName, email }));
+  const handleChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
   };
-  const onSubmit = (e) => {
-    e.preventDefault();
-    alert(`Successfully submitted`);
-    console.log(inputData);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData);
   };
+
   return (
-    <Fragment>
-      <h2>Home Page</h2>
+    <form className="card" onSubmit={handleSubmit}>
+      <label htmlFor="fullName">Full Name:</label>
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        value={formData.fullName}
+        onChange={handleChange}
+      />
+      <br />
 
-      <form className="card">
-        <label>First Name</label>
-        <input
-          type="text"
-          value={inputData.firstName}
-          placeholder="Enter your First Name"
-          onChange={handleSubmit}
-          required
-        />
-        <br />
-        <label>Last Name</label>
-        <input
-          type="text"
-          value={inputData.lastName}
-          placeholder="Enter your Last Name"
-          onChange={handleSubmit}
-          required
-        />
-        <br />
-        <label>Email</label>
-        <input
-          type="text"
-          value={inputData.email}
-          placeholder="Enter your Email"
-          onChange={handleSubmit}
-          required
-        />
-        <br />
-        <input type="submit" onClick={onSubmit} />
+      <label htmlFor="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+      />
+      <br />
 
-        <br />
-      </form>
+      <label htmlFor="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        value={formData.message}
+        onChange={handleChange}
+      />
+      <br />
 
-      <h4>{inputData.firstName}</h4>
-    </Fragment>
+      <input type="submit" />
+    </form>
   );
 };
 
