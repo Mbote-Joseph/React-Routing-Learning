@@ -17,6 +17,7 @@ const Home = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData);
+    setFormData({ fullName: "", email: "", message: "" });
   };
 
   return (
